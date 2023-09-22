@@ -12,7 +12,7 @@ class GameView(CRUDView):
 
 class UserView(CRUDView):
     model=MyUser
-    template_list = 'user_profile.html'
+    template_list= 'user_profile.html'
 
 
 class BalanceView(CRUDView):
@@ -20,10 +20,12 @@ class BalanceView(CRUDView):
     form = AddBalanceForm
     template_create = 'balance.html'
 
+
 class CommentView(CRUDView):
     model = Comment
     form = AddCommentForm
     template_create = 'comment.html'
+
 
 class DealView(CRUDView):
     model = Deal
